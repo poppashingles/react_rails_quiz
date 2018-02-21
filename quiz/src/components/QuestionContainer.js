@@ -8,7 +8,9 @@ class QuestionContainer extends Component {
     super(props)
     this.state = {
       questions: [],
-      answers: []
+      answers: [],
+      score: 0,
+      username: ''
     }
   }
 
@@ -24,7 +26,13 @@ class QuestionContainer extends Component {
   render() {
     return (
       <div>
-        Question
+        {this.state.questions.map((question) => {
+          return(
+            <div>
+              {question.question}
+            </div>
+          )
+        })}
         <Answers />
       </div>
     )

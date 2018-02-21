@@ -22,7 +22,15 @@ class Answers extends Component {
   render() {
     return (
       <div>
-        Answers
+        <div>
+          {this.state.answers.map((answer) => {
+            return(
+              <div>
+                {answer.answer}
+              </div>
+            )
+          })}
+        </div>
       </div>
     )
   }
