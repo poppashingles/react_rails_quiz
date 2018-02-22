@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
+// To serve up the answers, will be accessed by their question_id being = to the displayed question.id
 class Answers extends Component {
 
   constructor(props) {
